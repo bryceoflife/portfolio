@@ -1,0 +1,196 @@
+/*-- Sass Color Variables --*/
+/*-- Media Query Mixins --*/
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  /* Table Positioning and Redline */
+  /* Strikethrough */
+  /* Strike Hover effect */
+}
+body textarea, body select, body input, body button {
+  outline: none;
+}
+body table {
+  border-radius: 2px;
+  border-collapse: collapse;
+  height: 500px;
+  width: 100%;
+  height: 100%;
+}
+body table th, body table td {
+  border: 2px solid #FF2700;
+  border-radius: 2px;
+  border-collapse: collapse;
+}
+body table th#topLeft, body table td#topLeft {
+  border: 2px solid rgba(0, 0, 0, 0);
+  height: 32px;
+}
+@media (min-width: 576px) {
+  body table th#topLeft, body table td#topLeft {
+    height: 100%;
+    min-height: 64px;
+  }
+}
+body table th#topMiddle, body table td#topMiddle {
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-left: 2px solid rgba(0, 0, 0, 0);
+}
+body table th#topRight, body table td#topRight {
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-right: 2px solid rgba(0, 0, 0, 0);
+}
+body table th#rightTop, body table td#rightTop {
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-right: 2px solid rgba(0, 0, 0, 0);
+  width: 100%;
+  min-width: 32px;
+}
+@media (min-width: 576px) {
+  body table th#rightTop, body table td#rightTop {
+    width: 100%;
+    min-width: 64px;
+  }
+}
+body table th#rightBottom, body table td#rightBottom {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-right: 2px solid rgba(0, 0, 0, 0);
+}
+body table th#bottomLeft, body table td#bottomLeft {
+  border: 2px solid rgba(0, 0, 0, 0);
+  height: 16px;
+}
+@media (min-width: 576px) {
+  body table th#bottomLeft, body table td#bottomLeft {
+    height: 64px;
+  }
+}
+body table th#bottomMiddle, body table td#bottomMiddle {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-left: 2px solid rgba(0, 0, 0, 0);
+}
+body table th#bottomRight, body table td#bottomRight {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-right: 2px solid rgba(0, 0, 0, 0);
+}
+body table th#leftTop, body table td#leftTop {
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-left: 2px solid rgba(0, 0, 0, 0);
+  min-width: 16px;
+}
+@media (min-width: 576px) {
+  body table th#leftTop, body table td#leftTop {
+    min-width: 64px;
+  }
+}
+body table th#leftBottom, body table td#leftBottom {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  border-left: 2px solid rgba(0, 0, 0, 0);
+}
+body table .heroParagraph {
+  width: 100%;
+  padding: 1.5em;
+}
+@media (min-width: 992px) {
+  body table .heroParagraph {
+    min-width: 700px;
+    width: 0%;
+  }
+}
+body table .heroParagraph h1 {
+  font-weight: 900;
+  font-size: 2.25em;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 992px) {
+  body table .heroParagraph h1 {
+    font-size: 3.5em;
+    line-height: 1.5em;
+  }
+}
+body table .heroParagraph p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 2em;
+  margin: 0;
+  /* Link Colors */
+}
+@media (min-width: 992px) {
+  body table .heroParagraph p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+}
+body table .heroParagraph p:nth-child(2) {
+  margin-bottom: 1em;
+}
+body table .heroParagraph p a {
+  text-decoration: none;
+}
+body table .heroParagraph p a:nth-child(1) {
+  color: #2FC3FF;
+}
+body table .heroParagraph p a:nth-child(1):visited {
+  color: #2FC3FF;
+}
+body table .heroParagraph p a:nth-child(1)::after {
+  background: #2FC3FF;
+}
+body table .heroParagraph p a:nth-child(2) {
+  color: #535FE5;
+}
+body table .heroParagraph p a:nth-child(2):visited {
+  color: #535FE5;
+}
+body table .heroParagraph p a:nth-child(2)::after {
+  background: #535FE5;
+}
+body table .heroParagraph p a:nth-child(3) {
+  color: #FF385C;
+}
+body table .heroParagraph p a:nth-child(3):visited {
+  color: #FF385C;
+}
+body table .heroParagraph p a:nth-child(3)::after {
+  background: #FF385C;
+}
+body table .heroParagraph p a:nth-child(4) {
+  color: #0066FF;
+}
+body table .heroParagraph p a:nth-child(4):visited {
+  color: #0066FF;
+}
+body table .heroParagraph p a:nth-child(4)::after {
+  background: #0066FF;
+}
+body .strikethrough {
+  display: inline-block;
+  position: relative;
+}
+body .strikethrough::after {
+  transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  -ms-transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 105%;
+  height: 2px;
+  margin-top: -1em;
+  background: #160f1a;
+  transform-origin: center right;
+  transform: scaleX(0);
+}
+@media (min-width: 992px) {
+  body .strikethrough::after {
+    margin-top: -0.75em;
+  }
+}
+body .strikethrough:hover:after {
+  transform: scaleX(1);
+  transform-origin: center left;
+}
+
+/*# sourceMappingURL=styles.css.map */
