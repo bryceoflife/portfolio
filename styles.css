@@ -1,5 +1,14 @@
 /*-- Sass Color Variables --*/
 /*-- Media Query Mixins --*/
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
@@ -43,13 +52,30 @@ body table th#topRight, body table td#topRight {
 body table th#rightTop, body table td#rightTop {
   border-top: 2px solid rgba(0, 0, 0, 0);
   border-right: 2px solid rgba(0, 0, 0, 0);
+  /* Safari hack for empty cell height  */
   width: 100%;
   min-width: 32px;
+  height: 50vh;
 }
 @media (min-width: 576px) {
   body table th#rightTop, body table td#rightTop {
     width: 100%;
     min-width: 64px;
+  }
+}
+@media (min-width: 576px) {
+  body table th#rightTop, body table td#rightTop {
+    height: 175px;
+  }
+}
+@media (min-width: 768px) {
+  body table th#rightTop, body table td#rightTop {
+    height: 150px;
+  }
+}
+@media (min-width: 992px) {
+  body table th#rightTop, body table td#rightTop {
+    height: 250px;
   }
 }
 body table th#rightBottom, body table td#rightBottom {
